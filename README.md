@@ -1,5 +1,5 @@
 ```cmd
 npm install
 git commit -m "Update dependencies" -- "package-lock.json"
-npm exec -- vite --open
+npm exec -- vite dev
 ```
