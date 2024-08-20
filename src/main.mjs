@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom/client'
 
 import App from './components/App.jsx'
 
-const root = ReactDOM.createRoot(document.querySelector('body')); // this isn't best practice but I also don't care
+const root = ReactDOM.createRoot(document.getElementById('react-root'));
 root.render(React.createElement(App));
 console.debug(root);
