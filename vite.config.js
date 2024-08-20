@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
 	build: {
-		outDir: "../dist", // don't put this inside src
+		outDir: "../dist", // take it out of src and back up to the repository root
 		rollupOptions: {
 			output: {
 				preserveModules: true,
