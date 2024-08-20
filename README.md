@@ -49,6 +49,7 @@ git add "package-lock.json" && git commit -m "Update dependencies"
 npm exec -- vite dev
 
 npm exec -- vite build --emptyOutDir
+npm exec -- http-server dist -o
 ```
 
 ## With Bun
@@ -60,4 +61,5 @@ git add "yarn.lock" && git commit -m "Update dependencies"
 bun x -- vite dev
 
 bun x -- vite build --emptyOutDir
+bun x -- http-server dist -o
 ```
