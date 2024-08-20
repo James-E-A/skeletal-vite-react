@@ -7,11 +7,11 @@ const App = () => {
 	console.debug({ titleText });
 	setTimeout(() => {
 		setTitleText("chungus");
-	}, 1000);
+	}, 3000);
 	return [
-		<title>{`Meme: ${titleText}`}</title>,
-		<h1>WOW IT'S LESS THAN 50 SLOC IN THIS REPO</h1>,
-		<p>(Probably... I didn't count it lol)</p>
+		<title key="title">{`Meme: ${titleText}`}</title>,
+		<h1 key="h1">WOW IT'S LESS THAN 50 SLOC IN THIS REPO</h1>,
+		<p key="p">(it's a bit over 50 if you include config files but <em>whatever</em>...)</p>
 	];
 };
 
