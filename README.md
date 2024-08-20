@@ -6,6 +6,11 @@ difference of opinion you may have to the codebase.
 
 ## Opinionations
 
+- The codebase uses relative paths, which means your code won't break
+  if you upload it to a non-root folder on a static webhost. I do not
+  understand why you would want non-relative paths, but you can
+  configure this via the _base_ key in `vite.config.js`.
+
 - The codebase currently keeps all your project's source code under
   `/src`, and puts the build output in `/dist`. If you don't like this,
   edit or remove _root_ and _build.OutDir_ within `vite.config.js`, and
