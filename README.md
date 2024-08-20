@@ -21,5 +21,5 @@ git add "yarn.lock" && git commit -m "Update dependencies"
 
 bun x -- vite dev
 
-bun exec -- vite build --emptyOutDir
+bun x -- vite build --emptyOutDir
 ```
