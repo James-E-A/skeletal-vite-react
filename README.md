@@ -25,7 +25,7 @@ difference of opinion you may have to the codebase.
 
 - The entrypoint script is named `main.mjs`.
 
-# Installation
+# Usage
 
 ## With Node+NPM
 
