@@ -8,15 +8,15 @@ difference of opinion you may have to the codebase.
 
 - The codebase currently keeps all your project's source code under
   `/src`, and puts the build output in `/dist`. If you don't like this,
-  edit or remove those two paths within `vite.config.js`, and move the
-  contents of `/src` where you want them to reside.
+  edit or remove _root_ and _build.OutDir_ within `vite.config.js`, and
+  then actually move the contents of `/src` where you want them to be.
 
 - The codebase does NOT "statically link" all JS into a one-file blob;
   instead, it leaves each module discrete in the build output. (The
   modules have other Vite default build settings, including minification,
   tree-shaking, and very mild filename mangling.) If you want to restore
   the default Vite behavior of rolling up all modules into a blob,
-  remove the _rollupOptions_ entry from `vite.config.js`.
+  remove the _build.rollupOptions_ entry from `vite.config.js`.
 
 - The `index.html` entrypoint includes a noscript message advising
   users who have Javascript disabled to enable it, and linking to an
