@@ -16,6 +16,11 @@ difference of opinion you may have to the codebase.
   edit or remove _root_ and _build.OutDir_ within `vite.config.js`, and
   then actually move the contents of `/src` where you want them to be.
 
+- The codebase currently puts the modules, assets, and `index.html`
+  all directly in `/dist`. If you want to restore the Vite default
+  behavior of segregating the modules into the `/dist/assets` subfolder,
+  remove the _build.assetsDir_ key from `vite.config.js`.
+
 - The codebase does NOT "statically link" all JS into a one-file blob;
   instead, it leaves each module discrete in the build output. (The
   modules have other Vite default build settings, including minification,
