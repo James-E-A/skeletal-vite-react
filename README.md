@@ -34,7 +34,7 @@ difference of opinion you may have to the codebase.
   how to do this on a very wide array of popular browsers.
 
 - There is an example Favicon included to demonstrate use of the
-  `public` folder
+  `public` folder.
 
 - The entrypoint script is named `main.mjs`.
 
