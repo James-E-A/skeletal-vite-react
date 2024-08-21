@@ -4,6 +4,9 @@ This repo tries to be a conservative starting point. While it is
 opinionated, it tries to ensure that it's MAXIMALLY easy to apply any
 difference of opinion you may have to the codebase.
 
+I have tested this on Node 20 & NPM 10, and on Bun 1.11; if anyone cares
+to report that it works on other runtimes, please do so!
+
 ## Opinionations
 
 - The codebase uses relative paths, which means your code won't break
